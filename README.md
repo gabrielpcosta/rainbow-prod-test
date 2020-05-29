@@ -1,27 +1,31 @@
 # RainbowProdTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## Observações de ambiente
 
-## Development server
+### Sistema Operacional
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Ubuntu 18.04
 
-## Code scaffolding
+### Versão do NODE
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- v12.17.0
 
-## Build
+### Versão do NPM
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- 6.14.4
 
-## Running unit tests
+```
+Observação: Instalação do angular/cli com o comando npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instruções para verificação do possível bug
 
-## Running end-to-end tests
+Os passos a seguir devem ser realizados após o clone do repositório com os comandos sendo executados no diretório do projeto.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Executar o comando `npm install`
 
-## Further help
+2. Executar o comando `ng serve --prod`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Acessar no navegador o endereço `localhost:4200`
+
+4. Verificar no log do console do navegador o seguinte erro: `Error: [$injector:unpr] http://errors.angularjs.org/1.7.9/$injector/unpr?p0=tProvide…%20%3C-%20t%20%3C-%20filesStorageService%20%3C-%20rainbowSDK`
